@@ -1,36 +1,103 @@
+// @keyframes start{
+//     from{
+//         width: 0%;
+//     }
+
+// }
+// @keyframes startHeight{
+//     from{
+//         height: 0%;
+//     }
+
+// }
+
+// @keyframes header {
+//     from{
+//     opacity: 0;
+//     margin-top: 30%;
+//     }
+//     to{
+//         opacity: 1;
+//     }
+//     }
+    
+
+#svg_8{
+    animation: start 3s ease;
+   
+    
+}
+#svg_7{
+    animation: start 3s ease;
+    
+}
+
+#svg_4{
+    animation: startHeight 3s ease;
+    
+}
 .firstPage{
+
+    &--salutation{
+        animation: header 4s ease;
+    }
+    &--salutation2{
+      
+        animation: header 4s ease;
+       
+    }
+
     height: 120rem;
     &__navbar{
-    
+        position: -webkit-sticky;
+        position: sticky;
+        top: 3px;
+
+
         float: left;
         margin-top: 5rem;
-        position: relative;
-       z-index: 3;
+        // position: relative;
+       z-index: 9000;
      
         &--elem{
-            
+            text-decoration:none;
+
             height: 5rem;
             border: 1px solid black;
             width: 70rem;
             
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
+            box-shadow: 18px 18px 23px -17px rgba(0,0,0,0.75);
             background-color: white;
-            
+            // border-collapse: separate;
+            overflow: hidden;
+
+          
            &--ul{
-               
+          
             display: flex;
             justify-items: start;
             list-style: none;
+           
             li{
-            
-                padding: 2rem;
+                margin-top: 1.5rem;
+                // padding: 2rem;
+      
+                font-size: 2rem;
+                a{
+                    text-decoration:none;
+                    color: black;
+
+                }
 
             }
+
            }
         }
     }
     &__bg{
+       
          height: 55rem;
          margin-top: -2rem;
          width: 100rem;
@@ -68,7 +135,10 @@
         background-repeat: no-repeat;
         filter: blur(5px);
     }
+
+
     &--text{
+       
         // filter: blur(0);
         margin-top: 25%;
          margin-left:40%;
@@ -81,13 +151,17 @@
          z-index: 34;
          position: relative;
          
+          
 
         
     }
 
 
     &__resume{
-        margin-left: 10rem;
+
+        box-shadow: 18px 18px 23px -17px rgba(0,0,0,0.75);
+
+        // margin-left: 10rem;
        
        background-color: black;
        height: 4rem;
@@ -100,7 +174,11 @@
     
      border-radius: 2rem;
        &--file{
-           margin-top: 3rem;
+        &:hover{
+           
+            color: white;
+        }
+           margin-top: 4rem;
         color: rgb(179, 179, 179);
         text-decoration: none;
         position: relative;
@@ -123,5 +201,30 @@
 z-index: -30;
     margin-top: -17rem;
     margin-left: -45rem;
-
+    
 }
+.logo{
+    height: 4rem;
+    margin-top: .5rem;
+    box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.452);
+    // position: absolute;
+    
+}
+ nav ul li a.current {
+    
+        background: black;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 2rem ;
+        animation: ease;
+        color: white;
+        
+    
+  }
+ 
+//   nav ul li a {
+//     display: block;
+//     padding: 0.5rem 1rem;
+//     color: white;
+//     text-decoration: none;
+//   }

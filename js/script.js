@@ -102,53 +102,34 @@ for(let i=0; i<10;i++){
 
 })
 
-// ===================
-// firebase
-// const firebase = require("firebase");
-// // Required for side-effects
-// require("firebase/firestore");
-// var firebaseConfig = {
-//     apiKey: "AIzaSyDPEaAEfzpTfG5y1kQGZzwRiBRCoIQe0VM",
-//     authDomain: "contact-form-website-61649.firebaseapp.com",
-//     databaseURL: "https://contact-form-website-61649.firebaseio.com",
-//     projectId: "contact-form-website-61649",
-//     storageBucket: "contact-form-website-61649.appspot.com",
-//     messagingSenderId: "477338379489",
-//     appId: "1:477338379489:web:456632581d999cf55683a0",
-//     measurementId: "G-Q3DK91JG6T"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-// //   firebase.analytics();
-//     // initFirebase
+// =================================
 
-//     // firebase.initializeApp(firebaseConfig);
 
-// var firestore = firebase.firestore()
 
-// const submit=document.querySelector("#submit");
-// // console.log(submit)
-// const name=document.querySelector('#name')
-// const mail=document.querySelector('#email')
-// const subject=document.querySelector('#subject')
-// const text=document.querySelector('#textForum')
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("section")
+// console.log(mainSections)
+// console.log(mainNavLinks)
 
-// const db=firestore.collection("contactData");
-// console.log(name)
-// submit.addEventListener('click', ()=>{
-//        let userName=name.value
-//        let email=mail.value
-//        let sumj=subject.value
-//        let txt=text.value
-//        console.log(userName)
+let lastId;
+let cur = [];
 
-//     //    access db
-//     db.doc().set({
-//         name:userName,
-//         mail:email,
-//         subject:sumj,
-//         message:txt
-//     }).then(()=>{
-//         console.log("Data saved")
-//     }).catch((error)=>console.log(error))
-// })
+
+window.addEventListener("scroll", event=>{
+    let fromTop =window.scrollY;
+
+    mainNavLinks.forEach(link=>{
+        let section = document.querySelector(link.hash);
+        // console.log(section)
+
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");
+          }
+
+    })
+})

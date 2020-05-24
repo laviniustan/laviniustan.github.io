@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
- 
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
 
 
 </head>
 <body>
-    <section class="firstPage">
-        <nav class="firstPage__navbar">
-            <div class="firstPage__navbar--elem">
-                <ul class="firstPage__navbar--elem--ul">
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>Skill</li></a>
-                    <a href=""><li>Projects</li></a>
-                    <a href=""><li>Interesting</li></a>
-                    <a href=""><li>Testimonials</li></a>
-                    <a href=""><li>Contact</li></a>
-                </ul>
-            </div>
-        </nav>
+    <nav class="firstPage__navbar">
+        <div class="firstPage__navbar--elem">
+          
+            <ul class="firstPage__navbar--elem--ul">
+                <img src="./img/logo.png"  class="logo" alt="">
+                <li class="li"><a href="#Home">Home</a></li>
+                <li class="li"><a href="#skill">Skill</a></li>
+                <li class="li"><a href="#Projects">Projects</a></li>
+                <li class="li"><a href="#Interesting">Interesting</a></li>
+                <li class="li"><a href="#Testimonials">Testimonials</a></li>
+                <li class="li"><a href="#Contact">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="firstPage" id="Home">
+    
         <div class="firstPage__bg" id="elem">
 
             <div class="firstPage--text" >
@@ -41,8 +45,8 @@
         
             <div class="svg">
 
-                <svg width="1523" height="1330" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+                <!-- <svg width="1523" height="1330" xmlns="http://www.w3.org/2000/svg">
+                   
                     <g>
                      <title>background</title>
                      <rect fill="none" id="canvas_background" height="1332" width="1525" y="-1" x="-1"/>
@@ -56,8 +60,24 @@
                      <rect id="svg_7" height="12.228341" width="637.232412" y="149.563539" x="526.929568" fill-opacity="null" stroke-opacity="null" stroke-width="4.5" stroke="#000" fill="none"/>
                      <rect id="svg_8" height="12.228341" width="637.232412" y="1182.178945" x="234.808098" fill-opacity="null" stroke-opacity="null" stroke-width="4.5" stroke="#000" fill="none"/>
                     </g>
+                   </svg> -->
+                   <svg width="1523" height="1330" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+                   
+                    <g>
+                     <title>background</title>
+                     <rect x="-1" y="-1" width="1525" height="1332" id="canvas_background" fill="none"/>
+                     <g id="canvasGrid" display="none">
+                      <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+                     </g>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <rect transform="rotate(179.8355712890625 845.5457763671875,155.67770385742185) " fill="none" stroke="#000" stroke-width="4.5" stroke-opacity="null" fill-opacity="null" x="596.929568" y="149.563539" width="637.232412" height="12.228341" id="svg_7"/>
+                     <rect transform="rotate(0.4052257537841797 553.424316406192,1188.293090820301) " fill="none" stroke="#000" stroke-width="4.5" stroke-opacity="null" fill-opacity="null" x="234.808098" y="1182.178945" width="637.232412" height="12.228341" id="svg_8"/>
+                     <rect stroke="#000" id="svg_4" height="1236" width="12" y="39.999956" x="677.500405" fill-opacity="null" stroke-opacity="null" stroke-width="4.5" fill="none"/>
+                    </g>
                    </svg>
-
             </div> 
 
             <div class="firstPage__resume" >
@@ -82,12 +102,12 @@
     </section>
 
     <!-- skill -->
-    <section class="skill" >
+    <section class="skill" id="skill">
       <div class="skill__menu">
         <div class="skill__menu__item item1">
             <h1 class="skill__menu__item--txt skill1 txt" id="1">The skills</h1>
         </div>
-        
+    
         <div class="skill__menu__item">
             <h1 class="skill__menu__item--txt skill2 txt" id="2" >The other skills</h1>
         </div>
@@ -207,7 +227,7 @@
     </section>
     <!-- =================Projects==================== -->
     
-    <section class="section-project" id="projects">
+    <section class="section-project"id="Projects">
             
         <div class="section-project__title">
         
@@ -372,7 +392,7 @@
       
     </section>
 <!-- ============================interests================= -->
-    <section class="interests">
+    <section class="interests" id="Interesting">
         <img src="/img/bg2t6.png" class="interests--imgbg" alt="">
 
             <h1 class="InfoTitle">Useless info</h1>
@@ -437,7 +457,7 @@
 
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="Testimonials">
         <h1 class="testimonials__titleT">The Dark site</h1>
         <p class="testimonials__subT">What ex-followers, now worshipers, think about my genius</p>
         <div class="testimonials__user">
@@ -490,7 +510,7 @@
     </section>
     
 
-    <section class="section-contact" id="contact-me">
+    <section class="section-contact" id="Contact">
         <div class="contact">
             <div class="contact__form">
                 <form action="/js/form.php"class="form" method="POST">
