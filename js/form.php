@@ -8,15 +8,13 @@ if(isset($_POST['submit'])){
 
 
     $to='laviniu.stan@gmail.com';
-    $subject='Format Submission';
-    $message='Name: '.$name. '\n'.'Mail: '.$mail. "\n"."Subject: ".$subject."\n\n".$text;
+    $subject='Subject: '$subject;
+    $from="From: "$mail
+    $message='Name: '.$name. '\n'."Subject: ". ".\n\n".$text;
 
-    if(mail($to, $subject, $message )){
-        echo'<h1>Sent Successfully ! Thank you :)</h1>';
-    }else{
-        echo"Something went Wrong!";
-
-
+    
+    mail($to,  $subject, $from,$message );
+    header("Location: index.html?mailsend");
 }
 
 ?>
