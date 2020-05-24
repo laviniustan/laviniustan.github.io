@@ -1,0 +1,127 @@
+.firstPage{
+    height: 120rem;
+    &__navbar{
+    
+        float: left;
+        margin-top: 5rem;
+        position: relative;
+       z-index: 3;
+     
+        &--elem{
+            
+            height: 5rem;
+            border: 1px solid black;
+            width: 70rem;
+            
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            background-color: white;
+            
+           &--ul{
+               
+            display: flex;
+            justify-items: start;
+            list-style: none;
+            li{
+            
+                padding: 2rem;
+
+            }
+           }
+        }
+    }
+    &__bg{
+         height: 55rem;
+         margin-top: -2rem;
+         width: 100rem;
+         
+          background-size: 70rem;
+
+        position: relative;
+         
+
+       
+       position: relative;
+        float: right;
+        &--layer{
+            background-color: rgba(0, 0, 0, 0.589);
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+      
+       
+
+    }
+    &__bg::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/bg1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+    }
+    &--text{
+        // filter: blur(0);
+        margin-top: 25%;
+         margin-left:40%;
+        color: rgb(179, 179, 179);
+        //  z-index: 22;
+        font-size: 6rem;
+        // position: absolute;
+         transform: translate(-25%, -25%);
+         text-align: center;
+         z-index: 34;
+         position: relative;
+         
+
+        
+    }
+
+
+    &__resume{
+        margin-left: 10rem;
+       
+       background-color: black;
+       height: 4rem;
+       width: 20rem;
+       margin-top: -35rem;
+       margin-left: -13rem;
+       font-size: 2rem;
+       text-align: center;
+      position: relative;
+    
+     border-radius: 2rem;
+       &--file{
+           margin-top: 3rem;
+        color: rgb(179, 179, 179);
+        text-decoration: none;
+        position: relative;
+       }
+   
+    }
+
+    &__text{
+        width:70%;
+        margin-top: -15rem;
+        font-size: 1.4rem;
+        padding: 4rem;
+        text-align: center;
+        &__paragraph{
+            padding: 1rem;
+        }
+    }
+}
+.svg{
+z-index: -30;
+    margin-top: -17rem;
+    margin-left: -45rem;
+
+}

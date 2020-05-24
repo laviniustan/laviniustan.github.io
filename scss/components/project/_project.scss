@@ -1,0 +1,81 @@
+.section-project{
+    &__row{
+        display: flex;
+
+
+    }
+
+&__title{
+    font-size: 4rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+
+}
+
+// ================
+
+
+// ===============
+
+.card{
+    position: relative;
+    perspective: 150rem;
+    position: relative;
+    &:hover &__side--front{
+        cursor: grab;
+        transform: rotateY(180deg);
+    }
+
+
+//    
+    &:hover &__side--back{
+        cursor: pointer;
+        transform: rotateY(0);
+    }
+
+  
+ 
+    // border: 1px solid black;
+    // background-color: gray;
+
+    &__side{
+
+        backface-visibility: hidden;
+        transition: all .8s ease-in;
+        // position: absolute;
+        &--front{
+              background-color: rgb(75, 255, 165);
+              position: absolute;
+            height: 43rem;
+            width: 30rem;
+            
+        }
+
+        &--back{
+            //  position: absolute;
+            background-color: black;
+            transform: rotateY(180deg);
+            height: 43rem;
+            width: 30rem;
+            
+        }
+    }
+
+
+    &__picture{
+        height: 15rem;
+        width: 24rem;
+        background-color: white;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    &__heading{
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+
+

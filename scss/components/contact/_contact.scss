@@ -1,0 +1,102 @@
+.section-contact{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    padding: 15rem 0;
+    // background-image: linear-gradient(to right bottom, rgba(223, 227, 230, 0.075), rgba(119, 125, 129, 0.096));
+     
+}
+.contact{
+    
+    height: 45rem;
+    width: 80%;
+    background-image:linear-gradient(105deg, rgba(255, 255, 255, 0.671) 0%, rgba(255, 255, 255, 0.575)50%, transparent 50%),url(/img/contact-me2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-size: 100%;
+
+    border-radius: 3px;
+    
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.267);
+    display: grid;
+    justify-items:start ;
+    justify-content: space-around;
+    grid-template-columns:100% ;
+    // grid-template-rows:70% ;
+    padding: 3rem;
+    
+    .form{
+       
+        // padding: 10rem;
+        // width: 80%;
+        // transform: translate(-15rem, 15rem);
+        margin-top:6rem;
+        // margin-left:-10rem;
+     
+
+        &-group{
+            width: 25rem;
+            margin-bottom: 1rem;
+        }
+    
+    }
+
+}
+.form{
+
+    &__group:not(:last-child){
+        margin-bottom: 2rem;
+        // width: 90%;
+    }
+    &__input{
+        size: 1.5rem;
+        font-family: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        color: inherit;
+        background-color: rgb(255, 254, 253);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        font-weight: 700;
+        &--text{
+            height: 8rem;
+        }
+
+        
+        &::-webkit-input-placeholder{
+            color: black;
+        }
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.596);
+            border-bottom: 3px solid black;
+             width: 100%;
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid black;    
+        }
+
+    }
+   
+
+
+    &__label{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 2rem;
+        margin-top: 8px;
+        transition: all .3s;
+        display: block;
+    }
+
+    &__input:placeholder-shown + &__label{
+         opacity: 0;
+         visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

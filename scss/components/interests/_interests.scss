@@ -1,0 +1,126 @@
+.interests{
+    position: relative;
+    &--imgbg{
+        margin: 10rem;
+         position: absolute;
+        height: 40rem;
+        z-index: -4;
+
+        
+    }
+   
+    &__desc{
+        //  text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 1.5rem;
+        width: 60%;
+        margin-right: 0;
+        padding: 3rem;
+    }
+
+    &__frame{
+        height: 30rem;
+        width: 60rem;
+        border: 5px solid black;
+        position: absolute;
+        z-index: -30;
+        margin-left: 26rem;
+    }
+
+}
+
+.InfoTitle{
+    font-size: 4rem;
+    margin-left: 20rem;
+    margin-top: 10rem;
+    // padding: 4rem 0rem;
+}
+
+
+.hb{
+     font-size: 22px;
+}
+
+
+.progress{
+    height: 20rem;
+     width: 40rem;
+    
+    margin-left: 25rem;
+    margin-top: 20rem;
+//    background-color: white;
+   z-index: -20;
+   
+    // position: relative;
+    // background: 0 0 !important;
+
+    .da{
+        // top: 0;
+         display: flex;
+        
+        
+      
+          width: 33rem;
+        
+            // top: 0;
+
+            &_dot{
+               
+                top: 0;
+                //  display: block;
+                height: 20px;
+                width: 20px;
+                background:#4bffa5;
+                border-radius: 19px;
+                position: relative;
+               
+
+                &--grey{
+                    background: #999 !important  ;
+                    top: 0;
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                
+                    border-radius: 19px;
+                    position: relative;
+                }
+            }
+
+
+          
+        }
+
+
+        .da2::before{
+            content: "";
+            left: 0;
+            top: 0;
+            margin-top: 8.5rem;
+            z-index: -3;
+            width: 33rem;
+            height: 13%;
+            background-color: white;
+            position: absolute;
+
+            filter: blur(5px);
+        }
+    
+}
+
+.percentage{
+
+  
+    width: 80%;
+    // top: 0;
+    // height: 24px;
+    //  width: 100%;
+    position: relative;
+    &__stat{
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+    }
+
+}
