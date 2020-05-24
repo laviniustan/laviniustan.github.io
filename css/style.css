@@ -100,10 +100,11 @@ html {
       text-decoration: none;
       position: relative; }
       .firstPage__resume--file:hover {
-        color: white; }
+        color: white;
+        text-shadow: 1px 16px 19px white; }
   .firstPage__text {
     width: 70%;
-    margin-top: -15rem;
+    margin-top: -25rem;
     font-size: 1.4rem;
     padding: 4rem;
     text-align: center; }
@@ -150,7 +151,7 @@ nav ul li a.current {
         .skill__menu__item--txt:hover {
           cursor: pointer; }
           .skill__menu__item--txt:hover::before {
-            animation: line 2s ease;
+            animation: line 1s ease;
             content: '';
             position: absolute;
             height: 1rem;
@@ -192,7 +193,7 @@ nav ul li a.current {
 .skill1:hover {
   cursor: pointer; }
   .skill1:hover::before {
-    animation: line 2s ease;
+    animation: line 1s ease;
     content: '';
     position: absolute;
     height: 1rem;
@@ -316,24 +317,30 @@ nav ul li a.current {
 
 .card {
   position: relative;
-  perspective: 150rem;
-  position: relative; }
+  perspective: 150rem; }
   .card:hover .card__side--front {
     cursor: grab;
     transform: rotateY(180deg); }
+  .card__details {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem; }
+    .card__details li {
+      list-style: none; }
   .card:hover .card__side--back {
     cursor: pointer;
     transform: rotateY(0); }
   .card__side {
+    border-radius: 2rem;
     backface-visibility: hidden;
     transition: all .8s ease-in; }
     .card__side--front {
-      background-color: #4bffa5;
+      background-color: #818181;
       position: absolute;
       height: 43rem;
       width: 30rem; }
     .card__side--back {
-      background-color: black;
+      background-color: #474545;
       transform: rotateY(180deg);
       height: 43rem;
       width: 30rem; }
