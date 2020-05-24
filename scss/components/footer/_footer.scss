@@ -1,0 +1,38 @@
+.footer{
+    background-color: #141414;
+    display: flex;
+    color: white;
+    padding: 2.8rem;
+
+    
+
+    &__logo>*{
+        height: 13rem;
+        margin-top: 90px;
+    }
+    &__svg>*{
+        padding: 0;
+        // margin: 0;
+        margin: -47px;
+        animation: linef 3s ease;
+        top: 0;
+    }
+    &__contact{
+        margin-top: 5%;
+        margin-right: 0;
+        // margin: 0;
+   
+        &>*{
+            padding: .5rem;
+           &>*{
+            text-decoration: none;
+            color: white;
+           }
+        }
+    }
+}
+@keyframes linef{
+    from{
+        height:0%
+    }
+}

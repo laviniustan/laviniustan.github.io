@@ -33,10 +33,35 @@
       margin-top: 2rem;
       text-align: center;
       font-size: 1.3rem;
+
         li{
             list-style: none;
+           
         }
       
+  }
+
+  &__infoBox{
+      text-align: center;
+      .infoBack{
+          font-size: 3rem;
+          padding: 2rem;
+      }
+  }
+  &__used{
+      
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+
+    li{
+        list-style: none;
+        &:hover{
+            padding: 5px;
+            text-decoration: underline;
+        }
+    
+    }
   }
 
     &:hover &__side--back{
@@ -61,6 +86,7 @@
             height: 43rem;
             width: 30rem;
             
+            
         }
 
         &--back{
@@ -69,6 +95,7 @@
             transform: rotateY(180deg);
             height: 43rem;
             width: 30rem;
+            color: white;
             
         }
     }
@@ -89,3 +116,34 @@
 
 
 
+.backimg{
+    height: 10rem;
+}
+.divbtngit{
+    text-align: center;
+    padding: 3rem;
+    text-decoration: none;
+}
+.btngit{
+    padding: 2rem;
+    // text-align: center;
+   
+    background-color: #818181;
+
+    border: 2px solid black;
+    border-radius: 5rem;
+    color: white;
+    transition-duration: 0.4s;
+    outline: none;
+    &:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        font-size: 16px;
+        outline: none;
+    }
+   &>*{
+    
+       color: white;
+       text-decoration: none;
+       text-underline-offset: none;
+   }
+}

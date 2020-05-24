@@ -6,6 +6,21 @@
 html {
   scroll-behavior: smooth; }
 
+@keyframes start {
+  from {
+    width: 0%; } }
+
+@keyframes startHeight {
+  from {
+    height: 0%; } }
+
+@keyframes header {
+  from {
+    opacity: 0;
+    margin-top: 30%; }
+  to {
+    opacity: 1; } }
+
 #svg_8 {
   animation: start 3s ease; }
 
@@ -327,6 +342,20 @@ nav ul li a.current {
     font-size: 1.3rem; }
     .card__details li {
       list-style: none; }
+  .card__infoBox {
+    text-align: center; }
+    .card__infoBox .infoBack {
+      font-size: 3rem;
+      padding: 2rem; }
+  .card__used {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem; }
+    .card__used li {
+      list-style: none; }
+      .card__used li:hover {
+        padding: 5px;
+        text-decoration: underline; }
   .card:hover .card__side--back {
     cursor: pointer;
     transform: rotateY(0); }
@@ -343,7 +372,8 @@ nav ul li a.current {
       background-color: #474545;
       transform: rotateY(180deg);
       height: 43rem;
-      width: 30rem; }
+      width: 30rem;
+      color: white; }
   .card__picture {
     height: 15rem;
     width: 24rem;
@@ -353,6 +383,31 @@ nav ul li a.current {
   .card__heading {
     font-size: 5rem;
     text-align: center; }
+
+.backimg {
+  height: 10rem; }
+
+.divbtngit {
+  text-align: center;
+  padding: 3rem;
+  text-decoration: none; }
+
+.btngit {
+  padding: 2rem;
+  background-color: #818181;
+  border: 2px solid black;
+  border-radius: 5rem;
+  color: white;
+  transition-duration: 0.4s;
+  outline: none; }
+  .btngit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-size: 16px;
+    outline: none; }
+  .btngit > * {
+    color: white;
+    text-decoration: none;
+    text-underline-offset: none; }
 
 .interests {
   position: relative; }
@@ -433,28 +488,28 @@ nav ul li a.current {
   text-shadow: 2px 6px 49px white;
   color: white;
   height: 80rem;
-  background-color: black; }
+  background-color: #141414; }
   .testimonials__titleT {
     font-size: 5rem;
     text-align: center;
     padding: 4rem; }
   .testimonials__subT {
     font-size: 2rem;
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    padding-bottom: 5rem; }
   .testimonials__user {
     margin-left: 9rem;
     display: block;
     position: relative;
     justify-content: center;
-    padding: 3rem 5rem; }
+    margin-left: 17rem; }
     .testimonials__user--right {
-      margin-top: 3rem;
       display: flex;
       margin-right: 2rem; }
     .testimonials__user--trgl {
       display: block;
-      width: 16rem;
-      height: 16rem;
+      width: 15rem;
+      height: 15rem;
       clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       position: relative;
       margin-left: 0; }
@@ -462,6 +517,7 @@ nav ul li a.current {
         margin-top: -3rem;
         margin-left: 61rem; }
     .testimonials__user .userImg {
+      transition-duration: 0.4s;
       height: 37rem;
       width: auto;
       position: relative;
@@ -470,26 +526,26 @@ nav ul li a.current {
         margin-left: -10rem;
         height: 25rem; }
       .testimonials__user .userImg--right {
-        margin-left: -50px; }
+        margin-left: -58px; }
     .testimonials__user .userImg:hover {
       height: 30rem;
       transition: all .5s;
-      margin-left: -20rem; }
+      margin-left: -20rem;
+      opacity: 0.8; }
     .testimonials__user .userImg--right:hover {
       margin-left: -1rem; }
     .testimonials__user .userImg--3:hover {
       margin-left: -14rem; }
     .testimonials__user--Utext {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       width: 45rem;
       margin-top: -10rem;
       margin-left: 20rem; }
       .testimonials__user--Utext--right {
         margin-top: 5rem;
-        color: red;
         float: left;
         position: absolute;
-        margin-left: -5rem; }
+        margin-left: 0rem; }
 
 .span-right {
   float: right; }
@@ -559,3 +615,29 @@ nav ul li a.current {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
+
+.footer {
+  background-color: #141414;
+  display: flex;
+  color: white;
+  padding: 2.8rem; }
+  .footer__logo > * {
+    height: 13rem;
+    margin-top: 90px; }
+  .footer__svg > * {
+    padding: 0;
+    margin: -47px;
+    animation: linef 3s ease;
+    top: 0; }
+  .footer__contact {
+    margin-top: 5%;
+    margin-right: 0; }
+    .footer__contact > * {
+      padding: .5rem; }
+      .footer__contact > * > * {
+        text-decoration: none;
+        color: white; }
+
+@keyframes linef {
+  from {
+    height: 0%; } }
