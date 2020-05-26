@@ -66,6 +66,9 @@ html {
       box-shadow: 18px 18px 23px -17px rgba(0, 0, 0, 0.75);
       background-color: white;
       overflow: hidden; }
+      @media only screen and (max-width: 75em) {
+        .firstPage__navbar--elem {
+          width: 55rem; } }
       .firstPage__navbar--elem--ul {
         display: flex;
         list-style: none; }
@@ -75,6 +78,9 @@ html {
           .firstPage__navbar--elem--ul li a {
             text-decoration: none;
             color: black; }
+          @media only screen and (max-width: 75em) {
+            .firstPage__navbar--elem--ul li {
+              font-size: 1.6rem; } }
   .firstPage__bg {
     height: 55rem;
     margin-top: -2rem;
@@ -279,6 +285,9 @@ nav ul li a.current {
       height: 50rem;
       position: absolute;
       width: 100%; }
+      @media only screen and (max-width: 75em) {
+        .skill__info--1 {
+          margin-top: -5rem; } }
     .skill__info--2 {
       position: absolute;
       height: 50rem;
@@ -323,8 +332,11 @@ nav ul li a.current {
       display: flex; }
       .skill__info__stats--html {
         margin-left: -1rem;
-        width: 4rem;
+        width: 7rem;
         position: relative; }
+        @media only screen and (max-width: 112em) {
+          .skill__info__stats--html {
+            width: 4rem; } }
 
 .skill1:hover {
   cursor: pointer; }
@@ -656,6 +668,9 @@ nav ul li a.current {
     @media only screen and (max-width: 112em) {
       .interests__desc {
         font-size: 1rem; } }
+    @media only screen and (max-width: 75em) {
+      .interests__desc {
+        margin: 0; } }
   .interests__frame {
     height: 30rem;
     width: 60rem;
@@ -679,6 +694,9 @@ nav ul li a.current {
 
 .hb {
   font-size: 32px; }
+  @media only screen and (max-width: 75em) {
+    .hb {
+      font-size: 21px; } }
 
 .progress {
   height: 20rem;
@@ -692,6 +710,10 @@ nav ul li a.current {
       width: 12rem;
       margin-left: 31rem;
       margin-top: 0rem; } }
+  @media only screen and (max-width: 75em) {
+    .progress {
+      margin-left: 32rem;
+      margin-top: 40px; } }
   .progress .da {
     display: flex;
     width: 34rem; }
@@ -699,6 +721,9 @@ nav ul li a.current {
       .progress .da {
         width: 29rem;
         height: 0rem; } }
+    @media only screen and (max-width: 75em) {
+      .progress .da {
+        width: 26rem; } }
     .progress .da_dot {
       top: 0;
       height: 20px;
@@ -710,6 +735,10 @@ nav ul li a.current {
         .progress .da_dot {
           height: 18px;
           width: 18px; } }
+      @media only screen and (max-width: 75em) {
+        .progress .da_dot {
+          height: 16px;
+          width: 16px; } }
       .progress .da_dot--grey {
         background: white !important;
         top: 0;
@@ -738,6 +767,11 @@ nav ul li a.current {
         transform: translate(35rem, -7rem);
         width: 27rem;
         height: 18rem; } }
+    @media only screen and (max-width: 75em) {
+      .progress .da2::before {
+        transform: translate(36rem, -9rem);
+        width: 23rem;
+        height: 16rem; } }
 
 .percentage {
   position: absolute;
@@ -746,6 +780,9 @@ nav ul li a.current {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: .5rem; }
+    @media only screen and (max-width: 75em) {
+      .percentage__stat {
+        padding-top: 5px; } }
   @media only screen and (max-width: 112em) {
     .percentage {
       margin: 0; } }
@@ -767,6 +804,9 @@ nav ul li a.current {
     font-size: 2rem;
     margin-left: 4rem;
     padding-bottom: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .testimonials__subT {
+        font-size: 1.5rem; } }
   .testimonials__user {
     text-align: center;
     height: 30rem;

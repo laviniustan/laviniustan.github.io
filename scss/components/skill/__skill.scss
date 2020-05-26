@@ -139,6 +139,9 @@
                 
                 // margin-left: 6rem;
              }
+             @include respond(tab-land){
+                margin-top: -5rem;
+            }
         }
         &--2{
 
@@ -224,8 +227,12 @@
          
             &--html{
                 margin-left: -1rem;
-                 width: 4rem;
+                 width: 7rem;
                  position: relative;
+                 @include respond(desktop){
+                    width: 4rem;
+                 }
+                 
               
                
             }

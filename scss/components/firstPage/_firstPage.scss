@@ -93,6 +93,9 @@
             background-color: white;
             // border-collapse: separate;
             overflow: hidden;
+            @include respond(tab-land){
+                width: 55rem;
+            }
 
           
            &--ul{
@@ -110,6 +113,9 @@
                     text-decoration:none;
                     color: black;
 
+                }
+                @include respond(tab-land){
+                    font-size: 1.6rem;
                 }
 
             }
