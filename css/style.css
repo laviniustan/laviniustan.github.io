@@ -372,6 +372,9 @@ nav ul li a.current {
   position: absolute;
   margin-left: -10rem;
   animation: fade 1s ease; }
+  @media only screen and (min-width: 112.5em) {
+    .legenda {
+      margin-left: -5rem; } }
 
 .legenda > * {
   padding-top: 10rem;

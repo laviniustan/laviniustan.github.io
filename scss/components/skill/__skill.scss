@@ -292,9 +292,13 @@
 }
 .legenda{
     position: absolute;
-    margin-left: -10rem;
+    margin-left:  -10rem;
     // opacity: 0.5;
     animation: fade 1s ease;
+    @include respond(big-desktop){
+                
+        margin-left: -5rem;
+     }
 }
 .legenda >*{
 
