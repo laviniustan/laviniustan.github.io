@@ -5,4 +5,86 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
+
+
+  @mixin respond-phone{
+    @media (max-with:600) {   @content   };
+}
+
+//1em = 16px
+
+@mixin respond($breakpoint) {
+
+    // @if $breakpoint == big-desktop {
+    //     @media only screen and (min-width: 20em) { @content };    //320
+    // }
+    // @if $breakpoint == big-desktop {
+    //     @media only screen and (min-width: 23.43em) { @content };    //375
+    // }
+    // @if $breakpoint == big-desktop {
+    //     @media only screen and (min-width: 26.25em) { @content };    //420
+    // }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == mid {
+        @media only screen and (max-width: 43.75rem) { @content };    //700px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == laptop {
+        @media only screen and (max-width: 64em) { @content };    //1024px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == laptopL {
+        @media only screen and (max-width: 93.75em) { @content };    //1500
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 112em) { @content };    //1800
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+
+
+    // @if $breakpoint == inter-big{
+    //     @media only screen and (min-width:)
+    // }
+}
+
+html {
+    // This defines what 1rem is
+    // font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+ 
+    // @include respond(tab-land) { // width < 1200?
+    //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    // }
+
+    // @include respond(tab-port) { // width < 900?
+    //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // }
+
+    // // @include respond(tab-port) { // width < 900?
+    // //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // // }
+
+    // // 700 ->50%
+ 
+    // @include respond(big-desktop) {
+    //     font-size: 75%; //1rem = 12, 12/16 1<1800
+    // }
+
+    // @include respond(laptop) {  
+    //     font-size: 62.5%; //1rem = 10, 1/16  <1500
+    // }
+    //1400
+    // @include respond(inter-big) {
+    //     font-size:65%
+    // }
+}

@@ -1,6 +1,11 @@
 .section-project{
+    height: 70rem;
+    @include respond(laptopL){
+        height: 60rem;
+    }
     &__row{
         display: flex;
+        // justify-content: space-evenly;
 
 
     }
@@ -9,6 +14,9 @@
     font-size: 4rem;
     text-align: center;
     padding: 5rem;
+           @include respond(laptopL){
+            padding: 0rem 0rem 3rem ;   
+        }
 }
 
 
@@ -33,10 +41,27 @@
       margin-top: 2rem;
       text-align: center;
       font-size: 1.3rem;
-
+    &>ul{
+        padding: 0; 
+        // @include respond(desktop){
+        //     padding: 0;    
+        // }
+        // @include respond(laptopL){
+        //     padding: 0;    
+        // }
+    }
         li{
             list-style: none;
-           
+            @include respond(desktop){
+                padding-top: 5px;
+            }
+            @include respond(laptopL){
+                padding-top: 11px;
+            }
+        }
+        @include respond(laptopL){
+            font-size: 1rem;
+       
         }
       
   }
@@ -46,6 +71,14 @@
       .infoBack{
           font-size: 3rem;
           padding: 2rem;
+
+          @include respond(desktop){
+             font-size: 2rem;
+        }
+        @include respond(laptopL){
+            font-size: 1.5rem;
+        }
+
       }
   }
   &__used{
@@ -62,6 +95,12 @@
         }
     
     }
+    @include respond(tab-land) {
+        &>ul{
+            padding: 0;
+        }
+   
+     }
   }
 
     &:hover &__side--back{
@@ -85,6 +124,19 @@
               position: absolute;
             height: 43rem;
             width: 30rem;
+            @include respond(desktop){
+                height: 42rem;
+                width: 26rem;
+            }
+            @include respond(laptopL){
+                height: 34rem;
+                width: 21rem;
+            }
+            @include respond(tab-land) {
+                height: 32rem;
+                width: 18rem;
+          
+            }
             
             
         }
@@ -96,7 +148,19 @@
             height: 43rem;
             width: 30rem;
             color: white;
-            
+            @include respond(desktop){
+                width: 26rem;
+            }
+            @include respond(laptopL){
+                height: 35rem;
+                width: 21rem;
+            }
+            @include respond(tab-land) {
+                height: 33rem;
+                width: 19rem;
+          
+            }
+        
         }
     }
 
@@ -107,10 +171,28 @@
         background-color: white;
         margin-top: 3rem;
         margin-left: 0;
+
+        @include respond(desktop){
+            height: 13rem;
+            width: 22rem;
+        }
+        @include respond(laptopL){
+            height: 9rem;
+            width: 14rem;
+        }
+
     }
     &__heading{
         font-size: 5rem;
         text-align: center;
+
+        @include respond(desktop){
+            font-size: 5rem;
+        }
+        @include respond(laptopL){
+            font-size: 3rem;
+        }
+
     }
 }
 

@@ -1,6 +1,14 @@
 .testimonials{
     margin-top: 5rem;
     text-shadow: 2px 6px 49px  rgb(255, 255, 255);
+    color: white;
+    height: 80rem;
+    background-color: rgb(20, 20, 20);
+
+    @include respond(laptopL){
+       height: 70rem;
+        }
+    
     &__titleT{
         font-size: 5rem;
         text-align: center;
@@ -12,101 +20,175 @@
         padding-bottom: 5rem;
        
     }
-    color: white;
-    height: 80rem;
-    background-color: rgb(20, 20, 20);
+   
     &__user{
-        margin-left: 9rem;
-        display: block;
-        position: relative;
-        justify-content: center;
-        margin-left: 17rem;
+        &:hover{
+            background-color: #E6E3E3;
+            color: black;
+        }
+        text-align: center;
+      
+       
+        // margin-left: 9rem;
+        // display: block;
+        // position: relative;
+        // justify-content: center;
+        // margin-left: 17rem;
         // padding: 3rem 5rem;
      
-        &--right{
-            //  border: 1px solid white;
-            // margin-top:3rem;
-            display: flex;
-             margin-right: 2rem;
-            // width: 40rem;
+        // &--right{
+        //     //  border: 1px solid white;
+        //     // margin-top:3rem;
+        //     display: flex;
+        //      margin-right: 2rem;
+        //     // width: 40rem;
          
-        }
-        &--trgl{
-            display:block;
-            width: 15rem;
-            height: 15rem;
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-           
-            // backface-visibility: hidden;
-            position: relative;
-            margin-left: 0;
-            &--right{
-                 margin-top: -3rem;
-                //  float: right;
-                margin-left: 61rem;
-                // position: relative;
-            }
-       
-        }
-        .userImg{
-           
-            transition-duration: 0.4s;
-            &--3{
-                 margin-left: -10rem;
-                height: 25rem;
-            }
-           
-            // overflow: hidden;
-            height: 37rem;
-            width: auto;
-            position: relative;
-            margin-left: -27rem;
-
-            &--right{
-                margin-left: -58px;
-            }
-           
-        }
-        .userImg:hover{
-            // transform: translateX(1rem) translateY(1rem) ;
+        // }
             height: 30rem;
-            transition: all .5s;
-            margin-left: -20rem;
-            opacity: 0.8;
+            width: 20rem;
+            border: 6px solid white;
+      
          
-          
-        }
-        .userImg--right:hover{
-            margin-left: -1rem;
-        }
-        .userImg--3:hover{
-            margin-left: -14rem;
-            // height: 2rem;
+            
+            &--imgDiv{
+                margin-top: -7rem;
+                
+                height: 10rem;
+                width: 10rem;
+                // background-color: red;
+                border: 6px solid white;
+                border-radius: 50%;
+                overflow: hidden;
+        
+            }
+           
+       &--Utext{
+        margin-top: 3rem;
        }
 
-        &--Utext{
-          
-            font-size: 1.2rem;
-            width: 45rem;
-            //  position: absolute;
-            margin-top: -10rem;
-            margin-left: 20rem;
-            &--right{
-                // margin-right: 0rem;
-                margin-top: 5rem;
-                // color: red;
-                float: left;
-                position: absolute;
-                margin-left: 0rem;
-            }
-            
-        }
+
+       
+   @include respond(laptopL){
+    height: 27rem;
+    width: 15rem;
+    }
+
     }
 }
-// .rig{
-//      margin-right: 57rem;
-// }
-.span-right{
-    float: right;
+
+.userImg{
+    // margin-right: -15rem;
+    height: 10rem;
+    width: auto;
+    margin-left: -4rem;
+    // border-radius: 50%;
+}
+.element{
+    display: flex;
+    // padding-top: 3rem;
+    margin: 10rem;
+    @include respond(laptopL) {
+      
+        margin: 4rem;
+    
+
  }
-//   box-shadow: 2px 6px 49px 21px rgba(255,255,255,1);
+    @include respond(tab-land) {
+      
+            margin: 4rem;
+        
+   
+     }
+   
+}
+.userImg2{
+    margin-left: -1.5rem;
+    height: 20rem;
+
+}
+
+
+
+
+
+
+
+        // &--trgl{
+        //     display:block;
+        //     width: 15rem;
+        //     height: 15rem;
+        //     // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+           
+        //     // backface-visibility: hidden;
+        //     position: relative;
+        //     margin-left: 0;
+        //     &--right{
+        //          margin-top: -3rem;
+        //         //  float: right;
+        //         margin-left: 61rem;
+        //         // position: relative;
+        //     }
+       
+        // }
+//         .userImg{
+           
+//             transition-duration: 0.4s;
+//             &--3{
+//                  margin-left: -10rem;
+//                 height: 25rem;
+//             }
+           
+//             // overflow: hidden;
+//             height: 37rem;
+//             width: auto;
+//             position: relative;
+//             margin-left: -27rem;
+
+//             &--right{
+//                 margin-left: -58px;
+//             }
+           
+//         }
+//         .userImg:hover{
+//             // transform: translateX(1rem) translateY(1rem) ;
+//             height: 30rem;
+//             transition: all .5s;
+//             margin-left: -20rem;
+//             opacity: 0.8;
+         
+          
+//         }
+//         .userImg--right:hover{
+//             margin-left: -1rem;
+//         }
+//         .userImg--3:hover{
+//             margin-left: -14rem;
+//             // height: 2rem;
+//        }
+
+//         &--Utext{
+          
+//             font-size: 1.2rem;
+//             width: 45rem;
+//             //  position: absolute;
+//             margin-top: -10rem;
+//             margin-left: 20rem;
+//             &--right{
+//                 // margin-right: 0rem;
+//                 margin-top: 5rem;
+//                 // color: red;
+//                 float: left;
+//                 position: absolute;
+//                 margin-left: 0rem;
+//             }
+            
+//         }
+//     }
+// }
+// // .rig{
+// //      margin-right: 57rem;
+// // }
+// .span-right{
+//     float: right;
+
+// //   box-shadow: 2px 6px 49px 21px rgba(255,255,255,1);

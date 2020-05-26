@@ -4,7 +4,12 @@
     grid-template-columns: 100%;
     padding: 15rem 0;
     // background-image: linear-gradient(to right bottom, rgba(223, 227, 230, 0.075), rgba(119, 125, 129, 0.096));
-     
+
+    @include respond(laptopL){
+        padding: 5rem 0rem;
+         }
+
+    
 }
 .contact{
     
@@ -38,8 +43,11 @@
             width: 25rem;
             margin-bottom: 1rem;
         }
+        @include respond(laptopL){
+            margin-top:0rem;
+             }
     
-    }
+        }
 
 }
 .form{

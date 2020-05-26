@@ -1,4 +1,4 @@
-@keyframes start{
+@keyframes startLine{
     from{
         width: 0%;
     }
@@ -14,30 +14,42 @@
 @keyframes header {
     from{
     opacity: 0;
-    margin-top: 30%;
+ 
     }
     to{
         opacity: 1;
     }
-    }
+
+}
+
+   .spacepage1{
+       height: 1236px;
+       width: 10px;
+       background-color: black;
+       z-index: 999999;
+   } 
     
 
 #svg_8{
-    animation: start 5s ease;
-   
+    animation: startLine 5s ease;
+
     
 }
 #svg_7{
-    animation: start 5s ease;
+    animation: startLine 5s ease;
+
     
 }
 
 #svg_4{
     animation: startHeight 9s ease;
+
+   
     
 }
 .firstPage{
-
+    height: 115rem;
+    //  background-color: black;
     &--salutation{
         animation: header 4s ease;
     }
@@ -48,6 +60,15 @@
     }
 
     height: 120rem;
+ 
+    @include respond(desktop){
+        height: 115rem
+    }
+    @include respond(laptopL){
+        height: 85rem
+    }
+
+    
     &__navbar{
         position: -webkit-sticky;
         position: sticky;
@@ -77,7 +98,7 @@
            &--ul{
           
             display: flex;
-            justify-items: start;
+            // justify-items: start;
             list-style: none;
            
             li{
@@ -106,17 +127,35 @@
 
         position: relative;
          
+        
+        @include respond(desktop){
+            height: 47rem;
+            width: 75rem;
+             margin-right: 1px;
+        }
+        @include respond(laptopL){
+            height: 37rem;
+            width: 65rem;
+            // margin-top: 33%
+        }
+        @include respond(tab-land) {
+            height: 33rem;
+            width: 53rem;
+        }
 
-       
        position: relative;
         float: right;
         &--layer{
+
+            
             background-color: rgba(0, 0, 0, 0.589);
             height: 100%;
             width: 100%;
             top: 0;
             left: 0;
             position: absolute;
+
+           
         }
 
       
@@ -151,7 +190,13 @@
          z-index: 34;
          position: relative;
          
-          
+         
+         @include respond(desktop){
+            font-size: 4rem;
+            margin-top: 33%
+        }
+     
+        
 
         
     }
@@ -173,6 +218,14 @@
       position: relative;
     
      border-radius: 2rem;
+
+
+     @include respond(laptopL){
+        width: 17rem;
+        
+        margin-left: -9rem;
+    }
+
        &--file{
         &:hover{
            
@@ -197,12 +250,32 @@
         &__paragraph{
             padding: 1rem;
         }
+  
+        @include respond(laptopL){
+            margin-top: -35rem;
+            font-size: 1rem;
+        }
+        @include respond(laptopL){
+            margin-top: -17rem;
+            font-size: 1rem;
+        }
+    
+ 
+     
     }
 }
+// svg{
+//     position: absolute;
+// }
 .svg{
 z-index: -30;
     margin-top: -17rem;
     margin-left: -45rem;
+    @include respond(laptopL){
+        margin-top: -37rem;
+    }
+
+  
     
 }
 .logo{
